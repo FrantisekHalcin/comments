@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Comments Page
+    </title>
+</head>
+
+<body>
+    <div id="fullPage">
+        <div id="header">
+            <p id="headText"></p>
+            <div style="text-align: right;">
+                <button id="signOutButton" onclick="signOut()">Sign Out</button>
+            </div>
+        </div>
+
+        <div id="alert">
+            Your comment contains forbidden words!
+            <button id="close" onclick="closeAlert()">Close</button>
+        </div>
+
+        <div id="sign">
+            <form name="login">
+
+                <h1 id="ap">SIGN IN</h1>
+
+                <table>
+                    <tr>
+                        <td><label for="userName">User: </label></td>
+                        <td><input name="user" type="text" id="userName" placeholder="Username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="userPassword">Password: </label></td>
+                        <td><input name="password" type="password" id="userPassword" placeholder="Password" required></td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <input id="logButton" type="button" value="Login" onclick="signIn()">
+
+                <p>Don't have an account? Click the button</p>
+
+                <input id="showRegButton" type="button" value="Register" onclick="showRegister()">
+
+            </form>
+        </div>
+
+        <div id="register">
+            <form>
+
+                <h1>REGISTER</h1>
+
+                <table>
+                    <tr>
+                        <td><label for="name">User: </label></td>
+                        <td><input name="name" type="text" id="name" placeholder="Username" minlength="4" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password: </label></td>
+                        <td><input name="password" type="password" id="password" placeholder="Password" minlength="4" required></td>
+                    </tr>
+                </table>
+
+                <p>Both must be at least 4 characters long.</p>
+
+                <button type="button" onclick="register()">Create Account</button>
+
+                <p>Do you have an account? Click the button</p>
+
+                <button type="button" onclick="showLogin()">Login</button>
+
+            </form>
+        </div>
+        <div id="addCom">
+            <input type="text" id="addComment" class="addReplyInput" required>
+            <button class="addComButton" onclick="addComment()">Add Comment</button>
+        </div>
+        <div id="allComments"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

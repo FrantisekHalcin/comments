@@ -1,0 +1,221 @@
+body {
+    background-color: #F5F5F5;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#fullPage {
+    width: 70%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+#headText {
+    display: inline-block;
+    top: 0px;
+}
+
+#header {
+    width: 98%;
+    background-color: black;
+    color: rgb(249, 232, 122);
+    text-align: center;
+    margin: auto;
+    margin-top: 0px;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    z-index: 10;
+}
+
+h1 {
+    text-align: left;
+    margin: 5px;
+    color: rgb(157, 250, 250);
+}
+
+#signOutButton {
+    position: relative;
+    right: 20px;
+    top: 0px;
+}
+
+table {
+width: 50%;
+margin: auto;
+}
+
+td:first-of-type {
+    text-align: right;
+}
+
+td:last-of-type {
+    text-align: left;
+}
+
+#sign {
+    width: 60%;
+    min-width: 288px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    background: linear-gradient(90deg, rgb(43, 44, 77) 48%, rgb(108, 156, 151) 100%);
+}
+
+#register {
+    display: none;
+    width: 60%;
+    min-width: 288px;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    background: linear-gradient(90deg, rgb(43, 44, 77) 48%, rgb(108, 156, 151) 100%);
+}
+
+#addCom {
+    width: 80%;
+    min-width: 288px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    background: linear-gradient(65deg, rgb(213, 163, 110) 41%, rgb(202, 96, 96) 100%);
+}
+
+.commentBox {
+    border-top: solid #5b3205 1px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 15px;
+    background-color: rgb(251, 236, 175);
+    font-family: 'Lucida Handwriting';
+    font-size: 18px;
+    position: relative;
+    padding: 40px 0px 10px 10px;
+    overflow: auto;
+}
+
+.user {
+    border-top-left-radius: 10px;
+    background-color: #5b3205;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.date {
+    border-bottom-left-radius: 8px;
+    background-color: #5b3205;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px 8px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#allComments {
+    width: 100%;
+}
+
+.addComButton {
+    background-color: #FFFFFF;
+    color: #DE5050
+}
+
+.addComButton:hover {
+    color: #FFFFFF;
+    background-color: #DE5050
+}
+
+.addRep {
+    width: 60%;
+    min-width: 288px;
+    border-radius: 6px 0px 0px 6px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 0px;
+    background: linear-gradient(65deg, rgb(152, 130, 108) 41%, rgb(84, 105, 119) 100%);
+}
+
+.addReplyButton {
+    background-color: #FFFFFF;
+    color: #00325A;
+    margin-left: 4px;
+}
+
+.addReplyButton:hover {
+    color: #FFFFFF;
+    background-color: #00325A;
+}
+
+.addHideButton {
+    background-color: #00561a;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+}
+
+.addReplyInput {
+    width: 66%;
+    margin-bottom: 0px;
+}
+
+.replyBox {
+    border-radius: 10px 0px 0px 10px;
+    border-top: solid black 1px;
+    border-left: solid black 1px;
+    margin-top: 7px;
+    margin-left: 0px;
+    background-color: rgb(229, 228, 246);
+    font-family: 'Lucida Handwriting';
+    font-size: 18px;
+    position: relative;
+    padding: 40px 00px 0px 10px;
+    overflow: auto;
+}
+
+#alert {
+ display: none;
+ margin: auto;
+ margin-top: 0px;
+ background-color: rgb(255, 255, 255);
+ border: 1px solid rgb(0, 0, 0);
+ position: fixed;
+ padding-top: 5cqmin;
+ padding-left: 5%;
+ padding-right: 5%;
+ height: 100px;
+ width: 50%;
+ left: 25%;
+ top: 2%;
+ text-align: center;
+ color: #FF8300;
+ z-index: 20;
+ 
+}
+
+#close {
+ position: absolute;
+ right: 20px;
+ bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+   #fullPage {
+      width: 100%;
+    }
+  }
